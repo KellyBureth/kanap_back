@@ -24,7 +24,6 @@ app.use(express.static("images"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// app.use("https://kanap-back.netlify.app/api/products", productRoutes);
 app.use("/api/products", productRoutes);
 
 module.exports = app;
